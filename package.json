@@ -1,0 +1,23 @@
+{
+  "name": "Sanctum",
+  "version": "1.0.0",
+  "description": "sdv Class coding training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamishDrogemuller/Sanctum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamishDrogemuller/Sanctum/issues"
+  },
+  "homepage": "https://github.com/HamishDrogemuller/Sanctum#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
