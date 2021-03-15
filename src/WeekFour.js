@@ -1,5 +1,5 @@
 
-let x;
+let x = 5
 
 if (x < 0) {
     console.log('Hamish')
@@ -41,3 +41,35 @@ console.log(a)
 
 const b = a + 2
 console.log(b)
+
+
+Number('123')
+Number('123') === 123
+
+Number("unicorn") 
+
+// Skeleton
+
+function name() {
+
+}
+
+//
+const Information = {
+    student: 'Hamish',
+    country: 'NZ',
+    city: 'Nelson',
+    postcode: 7010
+}
+
+console.log(Information)
+
+//
+
+let c = 11
+
+if (c === 11 && typeof c === 'number') {
+    console.log('its true')
+} else {
+    console.log('error')
+}
