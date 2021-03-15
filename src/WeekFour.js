@@ -73,3 +73,14 @@ if (c === 11 && typeof c === 'number') {
 } else {
     console.log('error')
 }
+
+
+let d = 5
+let e = d
+console.log(d) //5
+console.log(e) //5
+console.log(d === e)
+d = 10
+console.log(d)
+console.log(e)
+console.log(d === e)
