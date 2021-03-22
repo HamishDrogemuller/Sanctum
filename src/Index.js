@@ -1,8 +1,11 @@
-const Information = {
-    student: 'Hamish',
-    country: 'NZ',
-    city: 'Nelson',
-    postcode: 7010
-}
+// proxy Example
+const obj = { text: "hello" , count: 0}
+const customObj = new Proxy(obj, {
+    get: (obj, property) => {
+        console.log(obj[property])
+        return obj[property];
+    }
+})
 
-console.log(Information)
+const textValue = customObj.text;
+const countValue = customObj.count;
