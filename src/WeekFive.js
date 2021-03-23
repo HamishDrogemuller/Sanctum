@@ -82,3 +82,65 @@ while (c++ < 1000) {
     continue;
     console.log(c);
 }
+
+// Lesson 24.03.21
+
+//Switch Statement
+
+const person ='Joe';
+switch (person) {
+case 'Jane':
+console.log('Hi Jane');
+break;
+case 'John':
+console.log('Hi John');
+break;
+case 'Joe':
+console.log('Hi Joe');
+break;
+case 'Mary':
+console.log('Hi Mary');
+break;
+default:
+console.log('Hi');
+break;
+}
+
+//Refactor
+const score =70;
+switch (score) {
+ case 100:
+console.log('You have passed with a marking of A');
+ break;
+ case 80:
+console.log('You have passed with a marking of B');
+ break;
+case 70:
+console.log('You have passed with a marking of C');
+break;
+case 40:
+console.log('You have failed this task with a marking of F');
+break;
+default:
+console.log('Markings for this assessment have not been allocated');
+break;
+}
+
+const gradeKeyWord ='A';
+switch (gradeKeyWord) {
+ case 'A':
+console.log('A = 100');
+ break;
+ case 'B':
+console.log('B = 90');
+ break;
+case 'C':
+console.log('C = 70');
+break;
+case 'F':
+console.log('F = 40');
+break;
+default:
+console.log('Markings for this assessment have not been allocated');
+break;
+}
