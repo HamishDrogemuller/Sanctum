@@ -144,3 +144,104 @@ default:
 console.log('Markings for this assessment have not been allocated');
 break;
 }
+
+//Multi-Criteria Cases
+
+const V = 1;
+switch (V) {
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+        console.log('I like this number')
+        break;
+    case -1:
+    case -4:
+        console.log('I love this number');
+        break;
+    default:
+        console.log('I don\'t like this number.');
+}
+
+//Chained Expressions
+
+const foo = 1;
+let output = '';
+switch (foo) {
+    case 0:
+        output += 'So ';
+    case 1:
+        output += 'How ';
+        output += 'Old ';
+    case 2:
+        output += 'Are ';
+    case 3:
+        output += 'You';
+    case 4:
+        output += '?';
+        console.log(output);
+        break;
+    case 5:
+        output += '!';
+        console.log(output);
+        break;
+    default:
+        console.log('Please pick a number from 0 to 5!');
+}
+
+//Greater/Less than switch
+
+let gradeStudent = 95
+
+switch (true) {
+
+case (gradeStudent >= 90): 
+    console.log('My grade is A+')
+    break
+case (gradeStudent >= 80):
+    console.log('My grade is B+')
+    break
+case (gradeStudent >= 70):
+    console.log('My grade is C')
+    break
+case (gradeStudent <= 60):
+    console.log('My grade is F')
+    break
+default:
+    console.log('Error')
+    break;
+}
+
+//Ternary Operator (ES6)
+
+let Individual = {
+    name: 'Hamish',
+    age: 23,
+    driver: null
+};
+Individual.driver = Individual.age >=16 ? 'yes' : 'No' ;
+
+if (Individual.age >= 16) {
+    Individual.driver = 'Yes';
+    } else {
+        Individual.driver = 'No';
+    }
+console.log(Individual)
+
+
+//Ternary Example
+let isStudent = true;
+
+let price = isStudent? 8 : 12
+console.log(price); //8
+
+//Nested Ternary
+let Student = false;
+let Senior = true;
+let Cost = Student ? 8 : Senior ? 6 : 12
+console.log(Cost); //6
+
+let SDT = true;
+let price = 12;STD ? (
+    price = 
+)
