@@ -73,3 +73,6 @@ console.log(delete objTwo.firstName) //true
 console.log(objTwo.hasOwnProperty('firstName')) //false
 const newProps = delete objTwo.firstName
 console.log(newProps) //true
+
+//Class 31.03.21
+
