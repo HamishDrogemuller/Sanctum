@@ -98,6 +98,18 @@
 //     return arr
 // }
 
-const objToArray = obj => Object.entries(obj)
+// const objToArray = obj => Object.entries(obj)
 
-console.log(objToArray({me: "Hamish", you: "Matt", thing: "Date Night"}))
+// console.log(objToArray({me: "Hamish", you: "Matt", thing: "Date Night"}))
+
+// function reverses(str){
+//     let arr = str.split('')
+//     let revArr = arr.reverse()
+//     let joinArr = revArr.join('')
+
+//     return joinArr
+// }
+
+const revStr = (str) => str.length < 2 ? str : revStr(str.slice(1, str.length)) +str[0]
+
+console.log(revStr("ttaM og ay erehT"))
