@@ -91,17 +91,31 @@
 //("AAABBCDDAAAAABCCC") -> ["A", "B", "C", "D", "E"]
 //([1, 2, 3, 4, 4]) -> [1, 2, 3, 4]
 
-function removeFunc(x){ // Declare function
-    return Array.from(x).filter((e, i, a) => e !== a(i-1))// filters through array, if not equal to previous then push
-}
+// function removeFunc(x){ // Declare function
+//     return Array.from(x).filter((e, i, a) => e !== a(i-1))// filters through array, if not equal to previous then pushes new number to array
+// }
 
-let esFiveFunc = function(x){
-    let newArray = []; //Generates a new array for us to work with
+// let esFiveFunc = function(x){
+//     let newArray = []; //Generates a new array for us to work with
     
-    for (let i = 0; i < x.length; i++){ // for loop that loops while i is less than the length of x, increasing by 1 each time
-        if (x[i] !== x[i+1]) {// compares the property of x and filters out numbers that are not equal to the previous number used (if x does not equal x + 1 then it will add the new number to the array)
-            newArray.push(x[i]) // pushes new number to array
+//     for (let i = 0; i < x.length; i++){ // for loop that loops while i is less than the length of x, increasing by 1 each time
+//         if (x[i] !== x[i+1]) {// compares the property of x and filters out numbers that are not equal to the previous number used (if x does not equal x + 1 then it will add the new number to the array)
+//             newArray.push(x[i]) // pushes new number to array
+//         }
+//     }
+//     return newArray
+// }
+
+//Compare 2 arrays, IF values of the first array are in the second array then return true
+
+function comparing(a, b) {
+    for (let i = 0; i < a.length; i++){
+        if (a[i] === b[i]){
+            return true
+        }else{ if (a[i] !== b[i]){
+        return false}
         }
     }
-
 }
+
+console.log(comparing([1,2,3], [0,0,4,5]))
